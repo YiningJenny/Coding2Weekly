@@ -2529,7 +2529,7 @@ for line in data:
     print(''.join(x[0]*x[1] for x in line))
 ```
 # my homework
-## > find rare characters in the mess below:
+> ## find rare characters in the mess below:
 ```
 %%$@_$^__#)^)&!_+]!*@&^}@[@%]()%+$&[(_@%+%$*^@$^!+]!&_#)_*}{}}!}_]$[%}@[{_@#_^{*
 @##&{#&{&)*%(]{{([*}@[@&]+!!*{)!}{%+{))])[!^})+)$]#{*+^((@^@}$[**$&^{$!@#$%)!@(&
