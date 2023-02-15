@@ -3752,3 +3752,15 @@ $#_}*!(+([_&%{^&[([%]}*^{{([@+@]@*&@_!]_+([(#&!]]#$$#]@#{_]][_{@]{*))$({%}_![@$]
 }!)$]&($)@](+(#{$)_%^%_^^#][{*[)%}+[##(##^{$}^]#&(&*{)%)&][&{]&#]}[[^^&[!#}${@_(
 #@}&$[[%]_&$+)$!%{(}$^$}*
 ```
+### solution and output: 
+```
+myDict = collections.OrderedDict()
+for i in myStr:
+    myDict.setdefault(i,0)
+    myDict[i] += 1
+
+a = [k for k in myDict.keys() if myDict[k] == 1]
+print(''.join(a))
+```
+
+![image](https://user-images.githubusercontent.com/119497753/219042061-3a23dd49-435b-4722-a6be-f5ecc503dd17.png)
