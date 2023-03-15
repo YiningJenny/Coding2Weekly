@@ -2513,7 +2513,7 @@ url = 'http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=45439'
 while True:
     url_data = requests.get(url)
     next_url = url_data.text
-    #把网页上的文本按照空格分成一个列表，然后取最后一部分
+    # Divide the text on the webpage into a list by spaces and take the last part
     url = 'http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=' + next_url.split()[-1]
     print(next_url)
 ```
@@ -2524,7 +2524,7 @@ import pickle
 with open('E:\MSc Term2\Coding 2\Week 5\pythonChallenge/banner.p','rb') as f:
     data = pickle.load(f)
 
-#依照数字个数来打印每行字符
+# Print each line of characters according to the number of digits
 for line in data:
     print(''.join(x[0]*x[1] for x in line))
 ```
